@@ -1,18 +1,22 @@
-function checkNumbers(x){
-    let zero = 0;
-    let odd = 0;
-    let even = 0;
-    x.forEach(function(y){
-        if(typeof y === 'number' && !isNaN(y)) {
-            if(y === 0) {
-                zero++;
-            } else if(y % 2 === 0) {
-                even++;
-            } else {
-                odd++;
-            }
-        }
-    });
-    return [zero, odd, even];
+function checkNumbers(x) {
+  const result = [0,0,0];
+
+  for (let i = 0; i < x.length; i++) {
+    if (typeof(x[i]) === 'number' && !Number.isNaN(x[i])) {
+      if (x[i] === 0) {
+        result[2]++
+      }
+      else if (x[i] % 2 === 0) {
+        result[0]++
+      }
+      else {
+        result[1]++
+      }  
+    }   
+  }
+
+  return result;
+  
 }
+
 module.exports = checkNumbers;
