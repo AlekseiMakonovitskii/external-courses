@@ -6,7 +6,6 @@ function arrayCheck(x) {
   console.log('Общее число элементов: ' + x.length);
 
   return;
-
 }
 
 module.exports = arrayCheck;

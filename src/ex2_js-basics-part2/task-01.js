@@ -1,12 +1,15 @@
 function numberOrString(x) {
-  if (typeof x === 'number' && !isNaN(x)) {
+  const type = typeof x;
+
+  if (type === 'number' && !isNaN(x)) {
     return 'number';
-  } else if (typeof x === 'string') {
+  } 
+  
+  if (type === 'string') {
     return 'string';
   } 
     
   return undefined;
-
 }
 
 module.exports = numberOrString;
