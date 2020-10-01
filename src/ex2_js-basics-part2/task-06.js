@@ -1,5 +1,5 @@
 function numbersSelection(x) {
-  if (x > 1000) {
+  if (x > 1000 || x < 0) {
     return 'Данные неверны';
   } 
   
