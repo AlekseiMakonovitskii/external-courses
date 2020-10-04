@@ -1,11 +1,11 @@
 function stirngAndObject(str, obj) {
-  let result = obj;
-  
-  if (!(str in result)) {
-    result[str] = "new";
-  }
+  if (!(str in obj)) {
+    /*eslint-disable*/
+    obj[str] = "new";
+    /*eslint-enable*/
+  }  
 
-  return result;
-  }
-  
-  module.exports = stirngAndObject;
+  return obj;
+}
+
+module.exports = stirngAndObject;

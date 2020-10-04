@@ -1,14 +1,9 @@
-function checkObject(str,obj) {
-  if ((typeof str === 'string') && (typeof obj === 'object')) {
-    for (let key in obj) {
-      if (key === str) {
-        return true;
-      }
-    }  
-  }   
-  
+function checkObject(str, obj) {
+  if (str in obj) {
+    return true;
+  }
+
   return false;
 }
 
 module.exports = checkObject;
-

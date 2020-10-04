@@ -1,24 +1,21 @@
 function deepCopyObject(obj) {
   let clone;
 
-  if (obj.length) {
+  if (Array.isArray(obj)) {
     clone = [];
   } else {
-      clone = {};
+    clone = {};
   }
   
   for (let prop in obj) {
     if (typeof obj[prop] === "object") {
       clone[prop] = deepCopyObject(obj[prop]);
     } else {
-        clone[prop] = obj[prop];
-      }
+      clone[prop] = obj[prop];
+    }
   } 
 
   return clone;
 }
 
 module.exports = deepCopyObject;
-
-
-

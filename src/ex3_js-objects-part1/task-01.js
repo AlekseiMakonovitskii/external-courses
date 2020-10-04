@@ -1,6 +1,4 @@
-let user = {
-  
-};
+let user = {};
 
 user.name = 'Aleksei';
 user.sername = 'Makonovitskii';
