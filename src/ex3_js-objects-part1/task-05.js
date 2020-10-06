@@ -1,11 +1,7 @@
-function cloneObj(obj1) {
-  let obj2 = {};
+function cloneObj(obj) {
+  let newObj = Object.create(obj);
 
-  for (let key in obj1) {
-    obj1.hasOwnProperty(key);
-  }
-
-  return obj2;
+  return newObj;
 }
 
 module.exports = cloneObj;
