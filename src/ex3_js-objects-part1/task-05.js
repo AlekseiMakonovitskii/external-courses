@@ -1,5 +1,5 @@
 function cloneObj(obj) {
-  let newObj = Object.create(obj);
+  let newObj = Object.assign({}, obj);
 
   return newObj;
 }
