@@ -2,7 +2,7 @@ function checkObj(prop, obj) {
   let prot = Object.getPrototypeOf(obj);
 
   if (prot.hasOwnProperty(prop)) {
-    return 1;
+    return obj[prop];
   } 
     
   return undefined;
