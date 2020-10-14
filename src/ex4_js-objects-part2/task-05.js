@@ -1,5 +1,5 @@
 function searchString(str, str2) {
-  if (str.indexOf(str2) >= 0) {
+  if (str.indexOf(str2) !== -1) {
     return true;
   } 
     

@@ -1,9 +1,15 @@
 function deleteSpace(str) {
-  if (typeof str === 'string') {
-    return str.trimStart().trimEnd();
+  let arr = str.split('');
+
+  if (arr[0] === ' ') {
+    arr.shift();
   }
 
-  return str;
+  if (arr[arr.length - 1] === ' ') {
+    arr.pop();
+  }
+
+  return arr.join('');
 }
 
 module.exports = deleteSpace;

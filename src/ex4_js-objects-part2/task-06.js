@@ -1,15 +1,11 @@
 function eachWordUpCase(str) {
-  let strUp = '';
+  let strUp = str.split(' ');
 
-  for (i = 0; i < str.length; i++) {
-    if (str[i - 1] === ' ' || i === 0) {
-      strUp += str[i].toUpperCase().split(' ');
-    } else {
-      strUp += str[i];
-    }
+  for (let i = 0; i < strUp.length; i++) {
+    strUp[i] = strUp[i].slice(0, 1).toUpperCase() + strUp[i].slice(1);
   }
   
-  return strUp;
+  return strUp.join(' ');
 }
 
 module.exports = eachWordUpCase;

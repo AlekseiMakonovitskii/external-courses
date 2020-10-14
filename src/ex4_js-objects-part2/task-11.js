@@ -3,7 +3,7 @@ function strCount(str) {
 
   for (let i = 1; i < str.length; i++) {
     if (obj[str[i]]) {
-      obj[str[i]] = 0;
+      obj[str[i]] = 1;
     } else {
       obj[str[i]]++;
     }
