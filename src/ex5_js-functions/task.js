@@ -42,6 +42,6 @@ function Calculator() {
   };
 }
 
-let exportCalculator = new Calculator;
+let exportCalculator = new Calculator();
 
 module.exports = exportCalculator;
