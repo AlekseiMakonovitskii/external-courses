@@ -1,0 +1,47 @@
+.first {
+  background-color: green;
+  height: 100%;
+  width: 100%;
+}
+
+.image {
+  height: 200px;
+  width: 300px;
+  object-position: center;
+}
+
+.ul-first {
+  background-color: royalblue;
+  font-size: 120%;
+}
+
+.ul-link {
+  background-color: #c9c7c7;
+  font-size: 20px;
+}
+
+.table-first {
+  background-color: #a4b3aa;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.background-photo {
+  background-image: url('https://wallpapercave.com/wp/wp6734435.png');
+  font-size: 150%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(164, 179, 170);
+}
+
+
+h3 {
+  background-color: #6885a1;
+  font-family: 'Open Sans';
+    src: local('Open Sans'), 
+         url('/font/open_sans.ttf') format('truetype');
+}
+
+h2 {
+  background-color: #97cbfc;
+}
