@@ -16,7 +16,7 @@ function sliceAnalog(array, begin = 0, end = array.length) {
   }
 
   for (let i = total; i < newEnd; i++) {
-    if (i <= array.length - 1) {
+    if (array[i] !== undefined) {
       newArray.push(array[i]);
     }
   }
