@@ -14,27 +14,24 @@
   width: 350px;
   background-color: #c2805d;
   margin-top: 20px;
-  z-index: 1; 
+  position: relative;
 }
 
 .first-child-block {
   height: 200px;
   width: 350px;
   background-color: #c2805db0;
-  position: relative;
-  z-index: -1;
-  top: 5px;
-  left: 5px;
+  position: absolute;
+  margin: 5px;
 }
 
 .second-child-block {
   height: 200px;
   width: 350px;
   background-color: #c2805d67;
-  position: relative;
-  z-index: -2;
-  top: -190px;
-  left: 10px;
+  position: absolute;
+  margin: 10px;
+  
 }
 
 /*Third block*/
@@ -44,6 +41,7 @@
   width: 350px;
   background-color: #728acf;
   margin-top: 20px;
+  position: relative;
 }
 
 .third-block:before {
@@ -52,11 +50,8 @@
   height: 200px;
   width: 350px;
   background-color: #7289cf9d;
-  margin-top: 20px;
-  position: relative;
-  z-index: -1;
-  top: 5px;
-  left: 5px;
+  position: absolute;
+  margin: 5px;
 }
 
 .third-block:after {
@@ -65,8 +60,6 @@
   height: 200px;
   width: 350px;
   background-color: #7289cf65;
-  position: relative;
-  top: -190px;
-  right: -10px;
-  z-index: -2;
+  position: absolute;
+  margin: 10px;
 }
