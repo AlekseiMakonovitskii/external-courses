@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  display: flex;
+  height: 150px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  height: 100px;
+  width: 350px;
+  margin: 15%;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  border: 0.1px solid rgba(121, 121, 121, 0.589);
+}
+
+.button {
+  width: 155px;
+  height: 70px;
+  background-color: white;
+  border: none;
+  margin: 1;
+  position: relative;
+  left: 20%;
+  border: 0.1px solid rgba(121, 121, 121, 0.123);
+  outline: none;
+  font-size: 13px;
+}
+
+.button:hover {
+  color: blue;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 300px;
+  border: 0;
+  position: relative;
+  top: 15%;
+  left: 170%;
+}
+
+.main {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 800px;
+}
+
+.back {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 480px;
+}
+
+.left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 27%;
+  width: 400px;
+  height: 200px;
+}
+
+.right-box {
+  display: flex; 
+  flex-direction: column; 
+  margin-left: 10%;
+  width: 400px;
+  height: 200px;
+}
+
+  
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 24px;
+  width: 386px;
+  text-align: justify;
+  color: #6d6e71;
+}
+
+h3 {
+  font-size: 25px;
+  color: #6d6e71;
+  margin-bottom: 10px;
+}
+
+.icon-img {
+  height: 106px;
+  width: 113px;
+  position: relative;
+  right: 30%;
+  top: 45%;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='task-02.css' type='text/css'/>
+  <title>Task-02</title>
+</head>
+
+<body>
+  <form action='http://httpbin.org/get' method='POST'>
+    <div class='personal-info'>
+      <label>
+        Surame <input class='input' type='text'>
+      </label>
+      <label>
+        First Name <input class='input' type='text'>
+      </label>
+      <label>
+        Middle Name <input class='input' type='text'>
+      </label>
+      <div> You are
+        <label>
+          <input type='radio' name='gender' value='Male' class='input'> Male
+        </label>
+        <label>
+          <input type='radio' name='gender' value='Female' class='input'> Female
+        </label>
+      </div>
+      <label>
+        Age <input type='number' class='input-age input' min='18' max='101'>
+      </label>
+      <label>
+        Country of Residence <select class='select'>
+          <option>Russia</option>
+          <option>Germany</option>
+          <option>USA</option>
+        </select>
+      </label>
+      <label>
+        <input type='checkbox' class='input'> Ryazan
+      </label>
+      <label>
+        <input type='checkbox' class='input'> Moscow
+      </label>
+      <label>
+        Photography <input type='file' class='input'>
+      </label>
+      <div class='first-line'></div>
+      <label>
+        Title <select class='input' size=8>
+          <optgroup label='Technologies'>
+            <option>Web Master</option>
+            <option>Database Administrator</option>
+            <option>Computer-aided design</option>
+          </optgroup>
+          <optgroup label='Finance'>
+            <option>Web Master</option>
+            <option>Database Administrator</option>
+            <option>Computer-aided design</option>
+          </optgroup>
+        </select>
+      </label>
+      <label class='input'>
+        Salery <input type='range' class='input'>
+      </label>
+      <label class='input'>
+        <textarea class='input textarea'></textarea>
+      </label>
+    </div>
+    <br>
+    <div class="contact-information">
+      <label>
+        Site <input type='url' class='input login'>
+      </label>
+      <label>
+        Email <input type='email' class='input login'>
+      </label>
+      <label>
+        Phone <input type='tel' class='input login'>
+      </label>
+    </div>
+    <label>
+      Password <input type='password' class='input'><br>
+    </label>
+    <label>
+      <button type='submit' class='input send'>Отправить</button>
+    </label>
+    <label>
+      <button type='reset' class='input send'>Сбросить</button>
+    </label>
+  </form>
+</body>
+
+</html>

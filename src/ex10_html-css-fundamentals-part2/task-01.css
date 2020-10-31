@@ -1,0 +1,11 @@
+.first-picture {
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+}
+
+.second-picture {
+  height: 400px;
+  width: 400px;
+  clip-path: circle(200px);
+}

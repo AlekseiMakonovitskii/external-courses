@@ -1,0 +1,38 @@
+@import 'task-03-2.css';
+
+.table {
+  border: 1px solid black;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+}
+
+th {
+  height: 7%;
+  border: 1px solid black;
+  text-transform: uppercase;
+  background-color:#f0f2ff;
+}
+
+td {
+  padding: 5px;
+  border: 1px solid black;
+  height: 35px;
+}
+
+tr td:first-child {
+  text-transform: capitalize;
+}
+
+tr:nth-child(even) {
+  background-color:#f0f2ff;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f3f7;
+}
+
+tr:hover { 
+  background-color: #e4e5ed; 
+}
