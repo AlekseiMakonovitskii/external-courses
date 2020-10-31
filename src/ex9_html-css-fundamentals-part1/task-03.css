@@ -1,0 +1,47 @@
+.button {
+  height: 100px;
+  width: 400px;
+  border-radius: 20px 20px 20px 20px;
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  padding-top: 5px;
+}
+
+.button:before {
+  content: '';
+  padding-top: 5px;
+  display: block;
+  background: linear-gradient(to bottom, rgba(219,219,219,1) 0%, rgba(219,219,219,1) 24%, rgba(209,209,209,1) 56%, rgba(254,254,254,1) 100%);
+  border: 1px solid black;
+  border-radius: 20px 20px 20px 20px;
+  height: 88%;
+  width: 99.5%;
+  margin: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px 3.5px #e3e3e3;
+}
+
+.checkout {
+  position: relative;
+  bottom: 100px;
+  left: 60px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #454545;
+}
+
+.first-star {
+  zoom: 5;
+  position: relative;
+  bottom: 19px;
+  right: 47px;
+  color: #454545;
+}
+
+.second-star {
+  zoom: 5;
+  position: relative;
+  bottom: 19px;
+  left: 1px;
+  color: #454545;
+}
