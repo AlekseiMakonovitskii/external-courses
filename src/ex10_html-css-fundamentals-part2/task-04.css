@@ -95,15 +95,19 @@ img {
   height: 87px;
   flex-direction: row;
   border-width: 1px 0px 0px 0px;
+  
 }
 
 .button-box{
   display: flex;
   margin-left: 15%;
   flex-direction: row;
+  
+  
 }
 
 .button{
+  display: inline-block;
   position: relative;
   font-size: 13px;
   color: #6D6E71;
@@ -111,15 +115,24 @@ img {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  border: 0.1px solid #6d6e713f;
+  border: 1px solid #6d6e713f;
   border-width: 0px 0px 0px 1px;
+  align-self: center;
+  justify-content: center;
 }
 
 .button:first-child {
   border-width: 0px 0px 0px 0px;
 }
 
-.button:hover{
+.button:hover::before{
+  content: "";
+  position: absolute;
+  bottom: 1%;
+  left: calc(50% - 27px);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 20px solid #1FAAE2;
   color: #1FAAE2;
 }
 
