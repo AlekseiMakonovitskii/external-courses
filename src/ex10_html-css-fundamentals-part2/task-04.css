@@ -10,10 +10,8 @@ img {
   display: block;
 }
 
-.content-main{
+.body{
   display: flex;
-  flex-direction: column;
-  
 }
 
 .header{
@@ -95,15 +93,12 @@ img {
   height: 87px;
   flex-direction: row;
   border-width: 1px 0px 0px 0px;
-  
 }
 
 .button-box{
   display: flex;
   margin-left: 15%;
   flex-direction: row;
-  
-  
 }
 
 .button{
