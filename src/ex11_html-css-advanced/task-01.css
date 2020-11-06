@@ -56,25 +56,17 @@
 
 @keyframes jump {
   0%{
-    transform: translate(0%, 0%);
+     transform: translateY(0%);
   }
-
-  25%{
-    transform: translate(-75%, -75%);
-  }
-
+ 
   50%{
-    transform: translate(-75%, 0%);
-  }
-
-  75%{
-    transform: translate(-75%, -75%);
+     transform: translateY(-150%); 
   }
 
   100%{
-    transform: translate(0%, 0%);
+    transform: translateY(0%);   
   }
-} 
+}
 
 /*animation*/
 
