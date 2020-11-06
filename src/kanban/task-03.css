@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.main{
+  display: flex;
+  width: 1152px;
+  height: 700px;
+  background: #0079BF;
+}
+
+.header{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 1152px;
+  height: 55px;
+  background: #0067A3;
+}
+
+.logo{
+  margin-left: 1%;
+  align-self: center;
+}
+
+.logo img{
+  height: 45px;
+  width: 45px;
+}
+
+.logo h1{
+  width: 331px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.create-button{
+  display: flex;
+  align-items: center;
+}
+
+.create{
+  display: flex;
+  position: absolute;
+  width: 181px;
+  height: 33px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+}
+
+.right-menu{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 40%;
+  align-items: center;
+}
+
+.avatar-menu{
+  display: flex;
+  align-self: center;
+  position: relative;
+  left: 120%;
+}
+
+.avatar-black{
+  position: relative;
+  right: 45%;
+}
+
+.arrow{
+  position: relative;
+  right: 35%;
+}
+
+.black-plus{
+  position: relative;
+  align-self: center;
+  right: 5%;
+}
+
+.footer{
+  display: flex;
+  position: absolute;
+  width: 1152px;
+  height: 55px;
+  background: #0067A3;
+  align-self: flex-end;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff
+}
+
+.firsit-box{
+  position: relative;
+  left: 10%;
+}
+
+.second-box{
+  position: relative;
+}
+
+.third-box{
+  position: relative;
+  left: 17%;
+}
+
+input{
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
