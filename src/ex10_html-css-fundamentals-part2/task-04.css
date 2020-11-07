@@ -204,7 +204,7 @@ img {
 
 .Let{
   position: relative;
-  height: 43;
+  height: 43px;
   font-size: 42px;  
   right: 6%;
   top: 29%;
@@ -244,7 +244,7 @@ img {
   width: 755px;
   height: 241px;
   background-color: #FEEB75;
-  top: 47.5%;
+  top: 49%;
   left: 41%;
   z-index: 1;
 }
@@ -298,7 +298,7 @@ img {
   top: 35%;
   left: 58%;
   color: #FFFFFF;
-  font-size: 14;
+  font-size: 14px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -433,7 +433,7 @@ img {
   .search-box-mini input{
     border: none;
     font-family: "Open Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 300px;
     font-size: 15px;
     color: #6d6e71;
     
@@ -442,7 +442,7 @@ img {
   .search-box-mini img{
     width: 25px;
     height: 25px;
-    position: re;
+    position: relative;
     right: 200px;
     top: 30px; 
   }
