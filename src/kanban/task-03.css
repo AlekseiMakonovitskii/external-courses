@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .main{
   display: flex;
-  width: 1152px;
-  height: 700px;
+  width: 100%;
+  height: 100%;
   background: #0079BF;
+  position: fixed;
 }
 
 .header{
   display: flex;
   position: relative;
   flex-direction: row;
-  width: 1152px;
+  width: 100%;
   height: 55px;
   background: #0067A3;
 }
@@ -55,31 +61,37 @@
   font-size: 18px;
   line-height: 21px;
   border: none;
+  margin-left: 20%;
 }
 
 .right-menu{
   display: flex;
   flex-direction: row;
-  position: relative;
-  left: 40%;
+  position: absolute;
+  margin-left: 83%;
   align-items: center;
+  align-self: center;
 }
 
 .avatar-menu{
   display: flex;
   align-self: center;
   position: relative;
-  left: 120%;
+  margin-top: 1%;
+  margin-left: 160%;
 }
 
 .avatar-black{
   position: relative;
-  right: 45%;
+  align-self: center;
+  margin-left: -96%;
 }
 
 .arrow{
-  position: relative;
-  right: 35%;
+  position: absolute;
+  margin-left: 15%;
+  margin-top: 1%;
+  align-self: center;
 }
 
 .black-plus{
@@ -91,7 +103,7 @@
 .footer{
   display: flex;
   position: absolute;
-  width: 1152px;
+  width: 100%;
   height: 55px;
   background: #0067A3;
   align-self: flex-end;
@@ -106,17 +118,20 @@
 }
 
 .firsit-box{
-  position: relative;
-  left: 10%;
+  position: absolute;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .second-box{
-  position: relative;
+  position: absolute;
+  margin-left: 15%;
+  margin-right: 5%;
 }
 
 .third-box{
-  position: relative;
-  left: 17%;
+  position: absolute;
+  margin-left: 80%;
 }
 
 input{
