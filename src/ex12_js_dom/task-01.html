@@ -4,39 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
   <link rel="stylesheet" href="task-01.css">
-  <script src="task-01.js"></script>
-  <title>task-01</title>
 </head>
 
-<body>
-  <div class="main">
-
-    <div class="main-window">
-      <div class="top-text">
-        <h1>Image slider</h1>
-      </div>
-
-      <div class="slider-windows">
-        <div class="slider">
-          <img src="image/first.jpg" alt="Slide">
-        </div>
-        <div class="slider">
-          <img src="image/second.jpg" alt="Slide">
-        </div>
-        <div class="slider">
-          <img src="image/third.jpg" alt="Slide">
-        </div>
+<body class="body">
+  <div class="around-box">
+    <button tabindex="0" id="back" class="button"> 
+      <img src="./image/left-arrow.svg" alt="arrow" class="arrow">
+    </button>
+    <div class="slider-container">
+      <div class="slider-content">
+        <img class="slide slide_left" src="./image/first.jpg" alt="first">
+        <img class="slide slide_central" src="./image/second.jpg" alt="second">
+        <img class="slide slide_right" src="./image/third.jpg" alt="third">
       </div>
     </div>
-
-    <div class="next">
-      <a class="next" onclick="next()"><img src="image/right-arrow.svg" alt="next" class="arrow"></a>
-    </div>
-    <div class="back">
-      <a class="back" onclick="back()"><img src="image/left-arrow.svg" alt="back" class="arrow"></a>
-    </div>
-
+    <button tabindex="1" id="next" class="button">
+      <img src="./image/right-arrow.svg" alt="arrow" class="arrow">
+    </button>
+  </div>
+  <script src="task-01.js"></script>
 </body>
 
 </html>

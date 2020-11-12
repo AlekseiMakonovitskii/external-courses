@@ -1,27 +1,49 @@
-var slideIndex = 1;
+const images = document.getElementsByClassName('.slide');
+const back = document.getElementById('back');
+const next = document.getElementById('next');
+let counter = 0;
 
-function next() {
-  showSlides(slideIndex += 1);
-}
+const getSlides = () => {
+    const leftSlide = document.querySelector('.slide.slide_left');
+    const rightSlide = document.querySelector('.slide.slide_right');
+    const centralSlide = document.querySelector('.slide.slide_central');
 
-function back() {
-  showSlides(slideIndex -= 1);
-}
+    return {
+        leftSlide,
+        rightSlide,
+        centralSlide,
+    };
+};
 
-function showSlides(x) {
-  var slides = document.getElementsByClassName("slider");
+const buttonBack = () => {
+    const { leftSlide, rightSlide, centralSlide } = getSlides();
+    counter = counter >= (images.length - 1) ? 0 : counter + 1;
 
-  if (x > slides.length) {
-    slideIndex = 1;
-  }
+    leftSlide.classList.remove('slide_left', 'slide_to-right');
+    rightSlide.classList.remove('slide_right', 'slide_to-right');
+    centralSlide.classList.remove('slide_central', 'slide_to-right');
 
-  if (x < 1) {
-    slideIndex = slides.length;
-  }
+    leftSlide.classList.add('slide_right', 'slide_to-left');
+    rightSlide.classList.add('slide_central', 'slide_to-left');
+    centralSlide.classList.add('slide_left', 'slide_to-left');
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+    rightSlide.innerText = images[counter];
+};
 
-  slides[slideIndex - 1].style.display = "block";
-}
+const buttonNext = () => {
+    const { leftSlide, rightSlide, centralSlide } = getSlides();
+    counter = counter <= 0 ? (images - 1) : counter - 1;
+
+    leftSlide.classList.remove('slide_left', 'slide_to-left');
+    rightSlide.classList.remove('slide_right', 'slide_to-left');
+    centralSlide.classList.remove('slide_central', 'slide_to-left');
+
+    leftSlide.classList.add('slide_central', 'slide_to-right');
+    rightSlide.classList.add('slide_left', 'slide_to-right');
+    centralSlide.classList.add('slide_right', 'slide_to-right');
+
+    leftSlide.innerText = images[counter];
+};
+
+back.addEventListener('click', buttonBack);
+next.addEventListener('click', buttonNext);
