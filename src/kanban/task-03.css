@@ -8,9 +8,9 @@
 .main{
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 937px;
   background: #0079BF;
-  position: fixed;
+  position: relative;
 }
 
 .header{
@@ -23,8 +23,9 @@
 }
 
 .logo{
-  margin-left: 1%;
+  margin-left: 25px;
   align-self: center;
+  margin-top: 5px;
 }
 
 .logo img{
@@ -61,43 +62,41 @@
   font-size: 18px;
   line-height: 21px;
   border: none;
-  margin-left: 20%;
+
 }
 
 .right-menu{
   display: flex;
   flex-direction: row;
   position: absolute;
-  margin-left: 83%;
+  margin-left: 1620px;
   align-items: center;
   align-self: center;
 }
 
-.avatar-menu{
+.white-img{
   display: flex;
   align-self: center;
   position: relative;
-  margin-top: 1%;
-  margin-left: 160%;
+  margin-top: 5px;
+  margin-left: 230px;
 }
 
-.avatar-black{
-  position: relative;
+.black-img{
+  position: absolute;
   align-self: center;
-  margin-left: -96%;
 }
 
 .arrow{
   position: absolute;
-  margin-left: 15%;
-  margin-top: 1%;
-  align-self: center;
+  margin-left: 25px;
+  margin-top: 8px;
 }
 
 .black-plus{
   position: relative;
   align-self: center;
-  right: 5%;
+  right: 8px;
 }
 
 .footer{
@@ -114,24 +113,22 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
-  color: #ffffff
+  color: #ffffff;
 }
 
 .firsit-box{
   position: absolute;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 85px;
 }
 
 .second-box{
   position: absolute;
-  margin-left: 15%;
-  margin-right: 5%;
+  margin-left: 275px;
 }
 
 .third-box{
-  position: absolute;
-  margin-left: 80%;
+  position: relative;
+  margin-left: 1550px;
 }
 
 input{
