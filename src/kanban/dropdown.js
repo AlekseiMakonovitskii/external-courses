@@ -1,27 +1,30 @@
 let main = document.querySelector('.main');
 let cirlceIcon = document.querySelector('.avatar-menu');
 let arrow = document.querySelector('.arrow');
-let count = 0;
+
+let dropDiv = document.createElement('div');
+dropDiv.classList.add('drop-div');
+
+let firstLine = document.createElement('button');
+firstLine.classList.add('line');
+dropDiv.appendChild(firstLine);
+firstLine.innerHTML = 'My account';
+
+let secondLine = document.createElement('button');
+secondLine.classList.add('line');
+dropDiv.appendChild(secondLine);
+secondLine.innerHTML = 'My tasks';
+
+let thirdLine = document.createElement('button');
+thirdLine.classList.add('line');
+dropDiv.appendChild(thirdLine);
+thirdLine.innerHTML = 'Log out';
+
+let count = true;
+
 
 function openDrop() {
-  let dropDiv = document.createElement('div');
-  dropDiv.classList.add('drop-div');
   main.appendChild(dropDiv);
-
-  let firstLine = document.createElement('button');
-  firstLine.classList.add('line');
-  dropDiv.appendChild(firstLine);
-  firstLine.innerHTML = 'My account';
-
-  let secondLine = document.createElement('button');
-  secondLine.classList.add('line');
-  dropDiv.appendChild(secondLine);
-  secondLine.innerHTML = 'My tasks';
-
-  let thirdLine = document.createElement('button');
-  thirdLine.classList.add('line');
-  dropDiv.appendChild(thirdLine);
-  thirdLine.innerHTML = 'Log out';
 }
 
 function removeDrop() {
@@ -30,13 +33,13 @@ function removeDrop() {
 }
 
 function useAll() {
-  if (count === 0) {
+  if (count === true) {
     openDrop();
-    count = 1;
+    count = false;
     arrow.style.transform = 'rotate(180deg)'
   } else {
     removeDrop();
-    count = 0;
+    count = true;
     arrow.style.transform = 'rotate(0deg)'
   }
 }
