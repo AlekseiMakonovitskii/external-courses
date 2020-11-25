@@ -1,4 +1,4 @@
-const LS_NAME_TASKS = "tasks";
+const LS_NAME_TASKS = 'tasks';
 const initialData = [
   {
     title: 'Backlog',
@@ -82,47 +82,47 @@ localStorage.setItem('LS_NAME_TASKS', JSON.stringify(initialData));
 localStorage.setItem('id-count', '14');
 
 const items = JSON.parse(localStorage.getItem('LS_NAME_TASKS'));
-let idCount = +localStorage.getItem("id-count");
+let idCount = +localStorage.getItem('id-count');
 
 const blocks = {
   backlog: document.querySelector('.backlog-tasks'),
   ready: document.querySelector('.ready-tasks'),
   inProgress: document.querySelector('.inProgress-tasks'),
   finished: document.querySelector('.finished-tasks'),
-}
+};
 
 const addButtons = {
   backlog: document.querySelector('.backlog-add'),
   ready: document.querySelector('.ready-add'),
   inProgress: document.querySelector('.inProgress-add'),
   finished: document.querySelector('.finished-add'),
-}
+};
 
 const selectButtons = {
   ready: document.querySelector('.ready-select'),
   inProgress: document.querySelector('.inProgress-select'),
   finished: document.querySelector('.finished-select'),
-}
+};
 
 const listButton = {
   ready: document.querySelector('.ready-list'),
   inProgress: document.querySelector('.inProgress-list'),
   finished: document.querySelector('.finished-list'),
-}
+};
 
 const blockItems = {
   backlog: items[0].tasks,
   ready: items[1].tasks,
   inProgress: items[2].tasks,
   finished: items[3].tasks,
-}
+};
 
 const taskBlocksOrder = ['backlog', 'ready', 'inProgress', 'finished'];
 const taskInput = document.querySelector('.task-input');
 
 const renderTasks = () => {
-  localStorage.setItem("id-count", `${idCount}`);
-  localStorage.setItem("kanban", JSON.stringify(items));
+  localStorage.setItem('id-count', `${idCount}`);
+  localStorage.setItem('kanban', JSON.stringify(items));
 
   Object.keys(blockItems).forEach(key => {
     blocks[key].innerHTML = '';
@@ -145,7 +145,6 @@ const renderTasks = () => {
     if (blockItems[key].length) {
       addButtons[nextKey].disabled = false;
       addButtons[nextKey].style.opacity = '1';
-    
     } else {
       addButtons[nextKey].disabled = true;
       addButtons[nextKey].style.opacity = '0.1';
@@ -157,21 +156,21 @@ taskBlocksOrder.forEach(key => {
   if (key === 'backlog') {
     addButtons[key].addEventListener('click', () => {
       taskInput.classList.add('visible');
-      
-      taskInput.addEventListener('blur', function () {
-        if (taskInput.value === "") {
-          taskInput.classList.remove('visible');
-        } else {
-          idCount += 1;
-          blockItems[key].push({ id: "task" + idCount, name: taskInput.value });
-          taskInput.value = "";
-          taskInput.classList.remove('visible');
-          renderTasks();
-        }
-      });
-    });
 
-    return;
+    taskInput.addEventListener('blur', function () {
+      if (taskInput.value === '') {
+        taskInput.classList.remove('visible');
+      } else {
+        idCount += 1;
+        blockItems[key].push({ id: 'task' + idCount, name: taskInput.value });
+        taskInput.value = '';
+        taskInput.classList.remove('visible');
+        renderTasks();
+      }
+    });
+  });
+
+  return;
   }
 
   addButtons[key].addEventListener('click', () => {
@@ -183,7 +182,7 @@ taskBlocksOrder.forEach(key => {
     list.classList.add('select-list');
 
     const blockOrder = taskBlocksOrder.findIndex(blockKey => key === blockKey);
-    const prevBlockName = taskBlocksOrder[blockOrder -1];
+    const prevBlockName = taskBlocksOrder[blockOrder - 1];
 
     list.addEventListener('click', ({ target }) => {
       const taskIndex = blockItems[prevBlockName].findIndex(({ id }) => {
