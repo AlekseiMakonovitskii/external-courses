@@ -20,7 +20,7 @@
 
       <div class="right-menu">
         <div class="create-button">
-          <button class='create'>
+          <button class="create">
             <img src="image/black-plus.svg" alt="Plus" class="black-plus">
             Create new list
           </button>
@@ -41,6 +41,102 @@
       </div>
     </header>
 
+    <content class="content">
+
+      <div class="box backlog" data-tasks-block="backlog">
+        <div class="box-header">
+          <div class="heder-txt">
+            <h1>Backlog</h1>
+          </div>
+          <button class="dots">
+            <img src="image/header-dots.svg" alt="dots">
+          </button>
+        </div>
+        <div class="box-content">
+          <ul class="task-list backlog-tasks"></ul>
+          <input type="text" class="task-input" placeholder="Create new card">
+        </div>
+        <div class="box-footer">
+          <button type="button" class="add backlog-add">
+            <h4 class='add-txt'>┿ Add card</h4>
+          </button>
+        </div>
+      </div>
+
+      <div class="box ready" data-tasks-block="ready">
+        <div class="box-header">
+          <div class="heder-txt">
+            <h1>Ready</h1>
+          </div>
+          <button class="dots">
+            <img src="image/header-dots.svg" alt="dots">
+          </button>
+        </div>
+        <div class="box-content">
+          <ul class="task-list ready-tasks"></ul>
+        </div>
+        <div class="box-footer">
+          <button class="select ready-select">
+            <div class="select-list ready-list">
+              <h1>Open List</h1>
+            </div>
+          </button>
+          <button type="button" class="add ready-add">
+            <h4 class='add-txt'>┿ Add card</h4>
+          </button>
+        </div>
+      </div>
+
+      <div class="box inProgress" data-tasks-block="inProgress">
+        <div class="box-header">
+          <div class="heder-txt">
+            <h1>In Progress</h1>
+          </div>
+          <button class="dots">
+            <img src="image/header-dots.svg" alt="dots">
+          </button>
+        </div>
+        <div class="box-content">
+          <ul class="task-list inProgress-tasks"></ul>
+        </div>
+        <div class="box-footer">
+          <button class="select inProgress-select">
+            <div class="select-list inProgress-list">
+              <h1>Open List</h1>
+            </div>
+          </button>
+          <button type="button" class="add inProgress-add">
+            <h4 class='add-txt'>┿ Add card</h4>
+          </button>
+        </div>
+      </div>
+
+      <div class="box finished" data-tasks-block="finished">
+        <div class="box-header">
+          <div class="heder-txt">
+            <h1>Finished</h1>
+          </div>
+          <button class="dots">
+            <img src="image/header-dots.svg" alt="dots">
+          </button>
+        </div>
+        <div class="box-content">
+          <ul class="task-list finished-tasks"></ul>
+        </div>
+        <div class="box-footer">
+          <button class="select finished-select">
+            <div class="select-list finished-list">
+              <h1>Open List</h1>
+            </div>
+          </button>
+          <button type="button" class="add finished-add">
+            <h4 class='add-txt'>┿ Add card</h4>
+          </button>
+        </div>
+      </div>
+
+    </content>
+
     <footer class="footer">
       <div class="firsit-box">
         <label for="firsit-icon">Active tasks:</label>
@@ -56,7 +152,7 @@
       </div>
     </footer>
   </main>
-
+  <script src="events.js"></script>
   <script src="dropdown.js"></script>
 </body>
 
