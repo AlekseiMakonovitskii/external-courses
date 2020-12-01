@@ -6,17 +6,15 @@ function Hangman (word) {
   this.mistakeLetter = [];
 
   this.answersArray = () => {
-    for (let i = 0; i < this.correctWordArray.length; i++) {
-      this.answers[i] = '_';
-    }
+    this.answers = this.correctWordArray.map(() => '_');
   }
   
   this.guess = (letter) => {
-    for (let i = 0; i < this.correctWordArray.length; i++) {
-      if (this.correctWordArray[i] === letter) {
-        this.answers[i] = letter;
+    this.correctWordArray.map((el, index) => {
+      if (el === letter) {
+        this.answers[index] = letter;
       }
-    }
+    })
 
     if (!this.answers.includes(letter)) {
       this.errors--;
