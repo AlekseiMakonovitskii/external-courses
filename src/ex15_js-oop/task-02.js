@@ -17,28 +17,27 @@ class Room {
   }
 
   totalPower() {
-    this.counter = 0;
-    
-    for(let i = 0; i < this.roomElectricalAppliances.length; i++) {
-      if (this.roomElectricalAppliances[i].condition === true) {
-        this.counter += this.roomElectricalAppliances[i].power;
-        }
-    }
+    this.totalPower = this.roomElectricalAppliances.filter(function (el) {
+      return el.condition === true
+    }).reduce(function (power, el) {
+      return power + el.power
+    }, 0);
 
-    console.log(`Общая потребляемая можность: ${this.counter}`);
+    return `Общая потребляемая можность: ${this.totalPower}`;
   };
 
   findElectricalAppliances(wantedName) {
-    for (let j = 0; j < this.roomElectricalAppliances.length; j++) {
-      if (this.roomElectricalAppliances[j].name === wantedName) {
-        console.log(`${wantedName} находится в комнате`);
-      } else {
-        console.log(`${wantedName} не находится в комнате`)
+    this.findElectricalAppliances = this.roomElectricalAppliances.find(function (el) {
+      if (el.name === wantedName) {
+        return el.name;
       }
-    }  
+
+      return null;
+    })
+
+    return this.findElectricalAppliances;
   };
 }
-
 
 let fullRoom = new Room([electricKettle, toaster, microwave, dishwasher]);
 console.log(fullRoom);

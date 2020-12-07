@@ -19,48 +19,54 @@ class Present {
   }
 
   fullWeight() {
-    this.fullWeight = 0;
+    this.fullWeight = this.present.reduce(function (weight, el) {
+      return weight + el.weight;
+    }, 0);
 
-    for (let i = 0; i < this.present.length; i++) {
-      this.fullWeight += this.present[i].weight;
-    }
-
-    console.log(`Подарок весит: ${this.fullWeight}`);
+    return `Подарок весит: ${this.fullWeight}`;
   };
 
   lightCandy() {
-    this.lightCandy = [];
-
-    for (let i = 0; i < this.present.length; i++) {
-      if (this.present[i].weight <= 50) {
-        this.lightCandy.push(this.present[i].name);
+    this.lightCandy = this.present.map(function (el) {
+      if (el.weight <= 50) {
+        return el.name;
       }
-    }
 
-    console.log(`Легкие конфеты: ${this.lightCandy}`)
+      return ' ';
+
+    }).filter(function (el) {
+      return el !== ' ';
+    }).join(', ');
+
+    return `Легкие конфеты: ${this.lightCandy}`;
   };
 
   heavyCandy() {
-    this.heavyCandy = [];
-
-    for (let j = 0; j < this.present.length; j++) {
-      if (this.present[j].weight > 50) {
-        this.heavyCandy.push(this.present[j].name);
+    this.heavyCandy = this.present.map(function (el) {
+      if (el.weight > 50) {
+        return el.name;
       }
-    }
 
-    console.log(`Тяжелые конфеты: ${this.heavyCandy}`);
+      return ' ';
+
+    }).filter(function (el) {
+      return el !== ' ';
+    }).join(', ');
+
+    return `Тяжелые конфеты: ${this.heavyCandy}`;
   };
 
   findCandy(wantedName) {
-    for (let h = 0; h < this.present.length; h++) {
-      if (this.present[h].name === wantedName) {
-        console.log(`${wantedName} лежат в подарке!`);
-      } else {
-        console.log(`${wantedName} не лежат в подарке!`)
+    this.findCandy = this.present.find(function (el) {
+      if (el.name === wantedName) {
+        return el.name;
       }
-    }  
-  }
+
+      return null;
+    })
+
+    return this.findCandy;
+  };
 }
 
 let present = new Present([lollipops, caramelCandies, chocolateCandies, candySticks, candyBars, fruitDrops, gumdrops]);
