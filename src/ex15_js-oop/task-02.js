@@ -17,17 +17,13 @@ class Room {
   }
 
   totalPower() {
-    this.totalPower = this.roomElectricalAppliances.filter(function (el) {
-      return el.condition === true
-    }).reduce(function (power, el) {
-      return power + el.power
-    }, 0);
+    this.totalPower = this.roomElectricalAppliances.filter((el) => el.condition === true).reduce((power, el) => power + el.power, 0);
 
     return `Общая потребляемая можность: ${this.totalPower}`;
   };
 
   findElectricalAppliances(wantedName) {
-    this.findElectricalAppliances = this.roomElectricalAppliances.find(function (el) {
+    this.findElectricalAppliances = this.roomElectricalAppliances.find((el) => {
       if (el.name === wantedName) {
         return el.name;
       }

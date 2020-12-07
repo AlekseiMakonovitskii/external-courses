@@ -19,45 +19,39 @@ class Present {
   }
 
   fullWeight() {
-    this.fullWeight = this.present.reduce(function (weight, el) {
-      return weight + el.weight;
-    }, 0);
+    this.fullWeight = this.present.reduce((weight, el) => weight + el.weight, 0);
 
     return `Подарок весит: ${this.fullWeight}`;
   };
 
   lightCandy() {
-    this.lightCandy = this.present.map(function (el) {
+    this.lightCandy = this.present.map((el) => {
       if (el.weight <= 50) {
         return el.name;
       }
 
       return ' ';
 
-    }).filter(function (el) {
-      return el !== ' ';
-    }).join(', ');
+    }).filter((el) => el !== ' ').join(', ');
 
     return `Легкие конфеты: ${this.lightCandy}`;
   };
 
   heavyCandy() {
-    this.heavyCandy = this.present.map(function (el) {
+    this.heavyCandy = this.present.map((el) => {
       if (el.weight > 50) {
         return el.name;
       }
 
       return ' ';
 
-    }).filter(function (el) {
-      return el !== ' ';
-    }).join(', ');
+    }).filter((el) => el !== ' ').join(', ');
 
     return `Тяжелые конфеты: ${this.heavyCandy}`;
   };
 
   findCandy(wantedName) {
-    this.findCandy = this.present.find(function (el) {
+    this.findCandy = this.present.find((el) => {
       if (el.name === wantedName) {
         return el.name;
       }
