@@ -3,11 +3,13 @@ let input = document.querySelector('.search');
 let debounce = (fn, ms) => {
   let timeout;
 
-  let call = () => {
-    fn.apply(this ,arguments);
+  return function () {
+    let call = () => {
+      fn.apply(this, arguments);
 
-    clearTimeout(timeout);
-    timeout = setTimeout(call, ms);
+      clearTimeout(timeout);
+      timeout = setTimeout(call, ms);
+    }
   }
 }
 
