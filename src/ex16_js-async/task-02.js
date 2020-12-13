@@ -6,15 +6,16 @@ let debounce = (fn, ms) => {
   return function () {
     let call = () => {
       fn.apply(this, arguments);
+    };
 
-      clearTimeout(timeout);
-      timeout = setTimeout(call, ms);
+    clearTimeout(timeout);
+    timeout = setTimeout(call, ms);
     }
   }
-}
+
 
 let send = () => {
-  let search = candy.find(el => el === input.value);
+  let search = candy.find(el => el.id === input.value);
 
   if (search) {
     console.log(search);
