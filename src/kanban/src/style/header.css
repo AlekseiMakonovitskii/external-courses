@@ -1,0 +1,15 @@
+@import '/src/kanban/src/style/create-new-list.css';
+@import '/src/kanban/src/style/logo.css';
+@import '/src/kanban/src/style/right-menu.css';
+
+.header{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: 55px;
+  background: #0067A3;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  background-color: #0067A3;
+}
