@@ -1,9 +1,9 @@
-@import '/src/kanban/src/style/drop-down.css';
-@import '/src/kanban/src/style/content-box.css';
-@import '/src/kanban/src/style/content-box-header.css';
-@import '/src/kanban/src/style/content-box-content.css';
-@import '/src/kanban/src/style/content-box-footer.css';
-@import '/src/kanban/src/style/content-box-events.css';
+@import '../style/drop-down.css';
+@import '../style/content-box.css';
+@import '../style/content-box-header.css';
+@import '../style/content-box-content.css';
+@import '../style/content-box-footer.css';
+@import '../style/content-box-events.css';
 
 .content{
   display: flex;

@@ -1,4 +1,4 @@
-@import '/src/kanban/src/style/footer-boxes.css';
+@import '../style/footer-boxes.css';
 
 .footer{
   display: flex;

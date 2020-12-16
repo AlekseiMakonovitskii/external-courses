@@ -1,6 +1,6 @@
-@import '/src/kanban/src/style/create-new-list.css';
-@import '/src/kanban/src/style/logo.css';
-@import '/src/kanban/src/style/right-menu.css';
+@import '../style/create-new-list.css';
+@import '../style/logo.css';
+@import '../style/right-menu.css';
 
 .header{
   display: flex;
