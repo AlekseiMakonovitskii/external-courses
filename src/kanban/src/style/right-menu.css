@@ -1,0 +1,27 @@
+.right-menu{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: 1020px;
+  align-items: center;
+  align-self: center;
+}
+
+.white-img{
+  display: flex;
+  align-self: center;
+  position: relative;
+  margin-top: 5px;
+  margin-left: 230px;
+}
+
+.black-img{
+  position: absolute;
+  align-self: center;
+}
+
+.arrow{
+  position: relative;
+  margin-left: 5px;
+  display: flex;
+}

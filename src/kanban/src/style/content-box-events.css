@@ -1,0 +1,143 @@
+.add{
+  display: flex;
+  align-items: center;
+  height: 20px;
+  align-self: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-txt:hover{
+  color: #0079BF;
+}
+
+.item:hover {
+  background-color: #0067a327;
+}
+
+.box .task-list li {
+  background: #ffffff;
+  margin: 0px 5px 10px 5px;
+  padding: 6px 8px;
+  overflow: auto;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  cursor: default;
+}
+
+.task-input, .select {
+  width: 100%;
+  outline: none;
+  border: none;
+  margin-bottom: 12px;
+  padding: 6px 8px;
+  height: 35px;
+  border-radius: 5px;
+  display: none;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.task-input{
+  height: 10px;
+  color: #000000;
+  max-width: 95%;
+  overflow: auto;
+  align-self: center;
+  padding: 10px;
+  top: 10px;
+}
+
+.select .select-list {
+  text-align: right;
+}
+
+.select-list {
+  background-color: #ffffff;
+  position: relative;
+  list-style: none;
+  left: 12px;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  bottom: 5px;
+  left: 0px;
+  width: 100%;
+}
+
+.select-list .item {
+  padding: 5px;
+  margin: 0px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.select{
+  border-radius: 15px;
+  border: 1px solid #EBECF0;
+  outline: none;
+  width: 100%;
+  margin: 0px 5px 0px 5px;
+  cursor: default;
+}
+
+.select h1{
+  display: flex;
+  margin-left: 75px;
+  font-size: 20px;
+  color: #5E6C84;
+  cursor: pointer;
+}
+
+.select h1:hover{
+  color:  #0079BF;
+}
+
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
+*::-webkit-scrollbar{
+  background-color:#ffffff;
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color:#CBCBCB;
+  border-radius: 5px;
+  width: 12px;
+  height: 52px;
+}
+
+*::-webkit-scrollbar-track{
+  background-color: #ffffff;
+  width: 12px;
+  height: 52px;
+}
+  
+  
+*::-webkit-scrollbar-button{
+  display: none;
+}
+
+.select-list{
+  overflow: auto;
+  max-height: 280px;
+}
+
+.open{
+  background-color: #ffffff;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 15px;
+}

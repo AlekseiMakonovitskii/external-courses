@@ -1,0 +1,38 @@
+.box-header{
+  display: flex;
+  position: relative;
+  height: 38px;
+  width: 100%;
+  background-color:  #EBECF0;
+  border-radius: 15px;
+  justify-content: space-between;
+  cursor: default;
+}
+
+.heder-txt{
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.dots{
+  display: flex;
+  align-items: center;
+  height: 18px;
+  width: 20px;
+  align-self: center;
+  margin-right: 5px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #EBECF0;
+}
+
+.heder-txt h1{
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 21px;
+}

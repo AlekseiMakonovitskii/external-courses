@@ -1,0 +1,19 @@
+.logo{
+  margin-left: 25px;
+  align-self: center;
+  margin-top: 5px;
+}
+
+.logo img{
+  height: 45px;
+  width: 45px;
+}
+
+.logo h1{
+  width: 331px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: #FFFFFF;
+}
