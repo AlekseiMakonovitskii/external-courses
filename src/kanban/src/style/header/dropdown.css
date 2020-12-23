@@ -6,11 +6,12 @@
   width: 140px;
   background-color: #ffffff;
   top: 55px;
-  margin-left: 1595px;
+  right: 5px;
   border: 1px solid #ffffff;
   border-radius: 15px;
   flex-direction: column;
   justify-content: center;
+  z-index: 3;
 }
 
 .line{

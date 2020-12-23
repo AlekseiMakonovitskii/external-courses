@@ -1,0 +1,18 @@
+.box-container {
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.box-item {
+  word-break: break-word;
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}

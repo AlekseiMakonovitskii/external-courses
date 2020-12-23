@@ -1,0 +1,9 @@
+.select-button {
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 35px;
+  border-radius: 10px;
+  background: #FFFFFF;
+}

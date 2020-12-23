@@ -1,0 +1,30 @@
+.box-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  height: 38px;
+  min-height: 38px;
+  width: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: default;
+}
+
+.box-header img {
+  margin-right: 10px;
+}
+
+.box-header span {
+  margin-left: 5px;
+  cursor: default;
+}
+
+.header-dots {
+  cursor: pointer;
+  z-index: 2;
+}

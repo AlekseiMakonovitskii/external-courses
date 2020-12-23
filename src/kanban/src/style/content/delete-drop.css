@@ -1,0 +1,28 @@
+.delete-drop {
+  position: absolute;
+  top: 3px;
+  right: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.delete-drop-list {
+  padding: 0;
+  margin: 0;
+}
+
+.delete-drop-item {
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-drop-item:hover {
+  background-color: #0067a327;
+  cursor: pointer;
+}

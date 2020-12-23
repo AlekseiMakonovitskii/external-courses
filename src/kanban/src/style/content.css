@@ -1,18 +1,8 @@
-@import '../style/drop-down.css';
-@import '../style/content-box.css';
-@import '../style/content-box-header.css';
-@import '../style/content-box-content.css';
-@import '../style/content-box-footer.css';
-@import '../style/content-box-events.css';
-
-.content{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: #0079BF;
-  position: relative;
-  align-items: flex-end;
-  justify-content: center;
-  max-height: 100vh;
-  overflow: hidden;
-}
+@import './content/mainContent.css';
+@import './content/header-box.css';
+@import './content/delete-drop.css';
+@import './content/main-box.css';
+@import './content/box-container.css';
+@import './content/select-button.css';
+@import './content/box-selected.css';
+@import './content/box-footer.css';
