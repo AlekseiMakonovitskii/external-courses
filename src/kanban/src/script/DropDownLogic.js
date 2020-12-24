@@ -1,9 +1,9 @@
-import {main, cirlceIcon, dropDiv} from './dropwdownVariable.js';
+import {content, dropDiv} from './DomVariable.js';
 
 let count = true;
 
 function openDrop() {
-  main.appendChild(dropDiv);
+  content.appendChild(dropDiv);
 }
 
 function removeDrop() {
@@ -11,7 +11,7 @@ function removeDrop() {
   removing.remove();
 }
 
-function useAll() {
+export function useAll() {
   let arrow = document.querySelector('.arrow');
   
   if (count === true) {
@@ -23,8 +23,4 @@ function useAll() {
     count = true;
     arrow.style.transform = 'rotate(0deg)'
   }
-}
-
-export function dropdpwn() {
-  cirlceIcon.addEventListener('click', useAll);
 }

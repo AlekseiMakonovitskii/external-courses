@@ -1,0 +1,36 @@
+.input {
+  position: relative;
+  width: 90%;
+  border: none;
+  font-size: 18px;
+  margin-left: 10px;
+  outline: none;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.box-input{
+  background-color: #ffffff;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
+  min-width: 282px;
+  width: 282px;
+}
+
+.select {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  height: 20px;
+  border: none;
+  font-size: 18px;
+  box-sizing: border-box;
+  display: flex;
+  align-self: center;
+  outline: none;
+  z-index: 5;
+}

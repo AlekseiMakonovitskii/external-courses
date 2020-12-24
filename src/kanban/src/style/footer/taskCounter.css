@@ -1,0 +1,11 @@
+.tasks-counter {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.tasks-counter-item,
+.about {
+  margin: 0;
+  padding: 17px 35px;
+}

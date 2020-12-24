@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import './style/header.css';
-@import './style/main.css';
+@import './style/mainstyles/mainstyles.css';
 @import './style/content.css';
 @import './style/footer.css';

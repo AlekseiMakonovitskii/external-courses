@@ -1,157 +1,43 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanban Board</title>
   <link rel="stylesheet" href="index.css">
-  <title>Task-03</title>
 </head>
-
 <body>
   <main class="main">
     <header class="header">
       <div class="logo">
         <img src="../image/logo.svg" alt="logo">
+        <a href="#" class="logo__link">Awesome Kanban Board</a>
       </div>
-      <div class="logo">
-        <h1>Awesome Kanban Board</h1>
-      </div>
-
       <div class="right-menu">
-        <div class="create-button">
-          <button class="create">
-            <img src="../image/black-plus.svg" alt="Plus" class="black-plus">
-            Create new list
-          </button>
-        </div>
-        <div class="avatar-menu">
-          <a href="#" class="avatar">
-            <div class="white-img">
-              <img src="../image/avatar.svg">
-              <div class="black-img">
-                <img src="../image/user-avatar.svg" alt="avatar" class="avatar-menu avatar-black">
-              </div>
-              <div class="arrow">
-                <img src="../image/arrow.svg" alt="arrow" class="arrow">
-              </div>
-            </div>
-          </a>
-        </div>
+        <button class="create-new-list">
+          <img src="../image/black-plus.svg" alt="plus">
+          <p>Create new list</p>
+        </button>
+        <a href="#" class="profile">
+          <div class="avatar">
+            <img src="../image/user-avatar.svg" alt="avatar">
+          </div>
+          <div class="arrow">
+            <img src="../image/arrow.svg" alt="arrow">            
+          </div>
+        </a>
       </div>
     </header>
 
     <content class="content">
-
-      <div class="box backlog" data-tasks-block="backlog">
-        <div class="box-header">
-          <div class="heder-txt">
-            <h1>Backlog</h1>
-          </div>
-          <button class="dots">
-            <img src="../image/header-dots.svg" alt="dots">
-          </button>
-        </div>
-        <div class="box-content">
-          <ul class="task-list backlog-tasks"></ul>
-          <input type="text" class="task-input" placeholder="Create new card">
-        </div>
-        <div class="box-footer">
-          <button type="button" class="add backlog-add">
-            <h4 class='add-txt'>┿ Add card</h4>
-          </button>
-        </div>
-      </div>
-
-      <div class="box ready" data-tasks-block="ready">
-        <div class="box-header">
-          <div class="heder-txt">
-            <h1>Ready</h1>
-          </div>
-          <button class="dots">
-            <img src="../image/header-dots.svg" alt="dots">
-          </button>
-        </div>
-        <div class="box-content">
-          <ul class="task-list ready-tasks"></ul>
-        </div>
-        <div class="box-footer">
-          <button class="select ready-select">
-            <div class="select-list ready-list">
-              <h1>Open List</h1>
-            </div>
-          </button>
-          <button type="button" class="add ready-add">
-            <h4 class='add-txt'>┿ Add card</h4>
-          </button>
-        </div>
-      </div>
-
-      <div class="box inProgress" data-tasks-block="inProgress">
-        <div class="box-header">
-          <div class="heder-txt">
-            <h1>In Progress</h1>
-          </div>
-          <button class="dots">
-            <img src="../image/header-dots.svg" alt="dots">
-          </button>
-        </div>
-        <div class="box-content">
-          <ul class="task-list inProgress-tasks"></ul>
-        </div>
-        <div class="box-footer">
-          <button class="select inProgress-select">
-            <div class="select-list inProgress-list">
-              <h1>Open List</h1>
-            </div>
-          </button>
-          <button type="button" class="add inProgress-add">
-            <h4 class='add-txt'>┿ Add card</h4>
-          </button>
-        </div>
-      </div>
-
-      <div class="box finished" data-tasks-block="finished">
-        <div class="box-header">
-          <div class="heder-txt">
-            <h1>Finished</h1>
-          </div>
-          <button class="dots">
-            <img src="../image/header-dots.svg" alt="dots">
-          </button>
-        </div>
-        <div class="box-content">
-          <ul class="task-list finished-tasks"></ul>
-        </div>
-        <div class="box-footer">
-          <button class="select finished-select">
-            <div class="select-list finished-list">
-              <h1>Open List</h1>
-            </div>
-          </button>
-          <button type="button" class="add finished-add">
-            <h4 class='add-txt'>┿ Add card</h4>
-          </button>
-        </div>
-      </div>
-
     </content>
 
     <footer class="footer">
-      <div class="firsit-box">
-        <label for="firsit-icon">Active tasks:</label>
-        <input type="text" name="firsit-icon" id="firsit-icon" value="<N>">
-      </div>
-      <div class="second-box">
-        <label for="second-icon">Finished tasks:</label>
-        <input type="text" name="second-icon" id="second-icon" value="<M>">
-      </div>
-      <div class="third-box">
-        <label for="third-icon">Kanban board by</label>
-        <input type="text" name="third-icon" id="third-icon" value="<NAME>, <YEAR>">
-      </div>
+      <ul class="tasks-counter"></ul>
+      <p class="about">Kanban board by Aleksei Makonovitskii</p>
     </footer>
   </main>
+
   <script type="module" src="index.js"></script>
 </body>
-</html>
+</html> 
